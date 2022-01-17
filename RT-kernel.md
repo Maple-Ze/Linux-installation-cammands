@@ -1,3 +1,4 @@
+### RT kernel installation
 ```
 sudo apt-get install build-essential bc curl ca-certificates fakeroot gnupg2 libssl-dev lsb-release libelf-dev bison flex
 ```
@@ -65,7 +66,7 @@ change to          CONFIG_SYSTEM_TRUSTED_KEYS=""
 continue the steps
 
 
-
+### Allow a user to set real-time permissions for its processes
 
 ```
 sudo addgroup realtime
