@@ -67,4 +67,22 @@ continue the steps
 
 
 
+```
+sudo addgroup realtime
+sudo usermod -a -G realtime $(whoami)
+```
+Afterwards, add the following limits to the realtime group in /etc/security/limits.conf:
+```
+@realtime soft rtprio 99
+@realtime soft priority 99
+@realtime soft memlock 102400
+@realtime hard rtprio 99
+@realtime hard priority 99
+@realtime hard memlock 102400
+```
+
+
+
+
+
 
